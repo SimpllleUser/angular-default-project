@@ -5,7 +5,7 @@ import { finalize } from 'rxjs/operators';
 
 import { environment } from '@env/environment';
 import { Logger, UntilDestroy, untilDestroyed } from '@shared';
-import { AuthenticationService } from '@app/modules/auth/authentication.service';
+import { AuthenticationService } from '@app/modules/auth/services/authentication.service';
 
 const log = new Logger('Login');
 

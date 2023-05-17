@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
-import { Credentials, CredentialsService } from './credentials.service';
+import { Credentials, CredentialsService } from '@app/modules/auth/credentials/credentials.service';
 
 export interface LoginContext {
   username: string;
