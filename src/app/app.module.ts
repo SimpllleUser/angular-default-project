@@ -9,10 +9,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from '@env/environment';
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
-import { AuthModule } from '@app/auth';
-import { HomeModule } from './home/home.module';
-import { LayoutModule } from './layout/layout.module';
-import { AboutModule } from './about/about.module';
+import { AuthModule } from '@app/modules/auth';
+import { HomeModule } from '@app/modules/home/home.module';
+import { LayoutModule } from '@app/layout/layout.module';
+import { AboutModule } from '@app/modules/about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 

@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { marker } from '@biesbjerg/ngx-translate-extract-marker';
 
+import { HomeComponent } from '@app/modules/home/pages/home/home.component';
 import { Layout } from '@app/layout/layout.service';
-import { AboutComponent } from './about.component';
 
 const routes: Routes = [
-  Layout.childRoutes([{ path: 'about', component: AboutComponent, data: { title: marker('About') } }]),
+  Layout.childRoutes([
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent, data: { title: marker('Home') } },
+  ]),
 ];
 
 @NgModule({
@@ -14,4 +17,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [],
 })
-export class AboutRoutingModule {}
+export class HomeRoutingModule {}

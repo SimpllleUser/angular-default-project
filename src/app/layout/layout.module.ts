@@ -5,9 +5,9 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { I18nModule } from '@app/i18n';
-import { AuthModule } from '@app/auth';
+import { AuthModule } from '@app/modules/auth/auth.module';
 import { LayoutComponent } from './layout.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '../layout/header/header.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, NgbModule, AuthModule, I18nModule, RouterModule],
