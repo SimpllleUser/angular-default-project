@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { I18nModule } from '@app/i18n';
+import { I18nModule } from '@app/modules/i18n';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from '@app/modules/auth/pages/login/login.component';
 

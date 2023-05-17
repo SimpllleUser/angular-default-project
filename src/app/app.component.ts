@@ -6,8 +6,8 @@ import { merge } from 'rxjs';
 import { filter, map, switchMap } from 'rxjs/operators';
 
 import { environment } from '@env/environment';
-import { Logger, UntilDestroy, untilDestroyed } from '@shared';
-import { I18nService } from '@app/i18n';
+import { Logger, UntilDestroy, untilDestroyed } from '@app/core';
+import { I18nService } from '@app/modules/i18n';
 
 const log = new Logger('App');
 

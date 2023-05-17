@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { LanguageSelectorComponent } from './language-selector.component';
+import { LanguageSelectorComponent } from '@app/modules/i18n/components/language-selector/language-selector.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, NgbModule],

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { LoaderComponent } from './loader/loader.component';
+import { LoaderComponent } from '@app/common/loader/loader.component';
 
 @NgModule({
   imports: [TranslateModule, CommonModule],

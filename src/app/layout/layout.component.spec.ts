@@ -7,7 +7,7 @@ import { AuthenticationService, CredentialsService } from '@app/auth';
 import { MockAuthenticationService } from '@app/auth/authentication.service.mock';
 import { MockCredentialsService } from '@app/auth/credentials.service.mock';
 
-import { I18nModule } from '@app/i18n';
+import { I18nModule } from '@app/modules/i18n';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './header/header.component';
 

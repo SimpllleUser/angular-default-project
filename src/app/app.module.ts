@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from '@env/environment';
-import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
+import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@app/core';
 import { AuthModule } from '@app/modules/auth';
 import { HomeModule } from '@app/modules/home/home.module';
 import { LayoutModule } from '@app/layout/layout.module';
