@@ -2,35 +2,29 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { AuthenticationGuard, AuthenticationService } from '@app/auth';
 import { MockAuthenticationService } from '@app/auth/authentication.service.mock';
-import { ShellComponent } from './shell.component';
-import { Shell } from './shell.service';
+import { LayoutComponent } from './layout.component';
+import { Layout } from './layout.service';
 
-describe('Shell', () => {
-
+describe('Layout', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        ShellComponent
-      ],
-      providers: [
-        AuthenticationGuard,
-        { provide: AuthenticationService, useClass: MockAuthenticationService },
-      ]
+      declarations: [LayoutComponent],
+      providers: [AuthenticationGuard, { provide: AuthenticationService, useClass: MockAuthenticationService }],
     });
   });
 
   describe('childRoutes', () => {
-    it('should create routes as children of shell', () => {
+    it('should create routes as children of layout', () => {
       // Prepare
       const testRoutes = [{ path: 'test' }];
 
       // Act
-      const result = Shell.childRoutes(testRoutes);
+      const result = Layout.childRoutes(testRoutes);
 
       // Assert
       expect(result.path).toBe('');
       expect(result.children).toBe(testRoutes);
-      expect(result.component).toBe(ShellComponent);
+      expect(result.component).toBe(LayoutComponent);
     });
   });
 });

@@ -8,35 +8,26 @@ import { MockAuthenticationService } from '@app/auth/authentication.service.mock
 import { MockCredentialsService } from '@app/auth/credentials.service.mock';
 
 import { I18nModule } from '@app/i18n';
-import { ShellComponent } from './shell.component';
+import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './header/header.component';
 
-describe('ShellComponent', () => {
-  let component: ShellComponent;
-  let fixture: ComponentFixture<ShellComponent>;
+describe('LayoutComponent', () => {
+  let component: LayoutComponent;
+  let fixture: ComponentFixture<LayoutComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        TranslateModule.forRoot(),
-        I18nModule,
-        NgbModule,
-        RouterTestingModule
-      ],
+      imports: [TranslateModule.forRoot(), I18nModule, NgbModule, RouterTestingModule],
       providers: [
         { provide: AuthenticationService, useClass: MockAuthenticationService },
-        { provide: CredentialsService, useClass: MockCredentialsService }
+        { provide: CredentialsService, useClass: MockCredentialsService },
       ],
-      declarations: [
-        HeaderComponent,
-        ShellComponent
-      ]
-  })
-    .compileComponents();
+      declarations: [HeaderComponent, LayoutComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShellComponent);
+    fixture = TestBed.createComponent(LayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
